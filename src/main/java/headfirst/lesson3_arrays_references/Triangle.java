@@ -1,13 +1,13 @@
-package headfirst.lesson3;
+package headfirst.lesson3_arrays_references;
 
 
 public class Triangle {
 
-    double area;
-    int height;
-    int length;
+    private double area;
+    private int height;
+    private int length;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Triangle[] ta = new Triangle[4];
         int x = 0;
 
@@ -18,18 +18,16 @@ public class Triangle {
             ta[x].setArea();
             System.out.print("треугольник " + x + " ,зона");
             System.out.print(" = " + ta[x].area);
-            x = x + 1;
+            x++;
         }
-        int y = x;
-        x = 27;
         Triangle ta5 = ta[2];
         ta[2].area = 343;
-        System.out.print(" y = " + y);
+        System.out.print(" y = " + x);
         System.out.print(", зона t5= " + ta5.area);
 
     }
 
-    void setArea() {
+    private void setArea() {
         area = (height * length) / 2;
     }
 }

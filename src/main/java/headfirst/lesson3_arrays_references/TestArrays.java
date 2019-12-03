@@ -1,8 +1,13 @@
-package headfirst.lesson3;
+package headfirst.lesson3_arrays_references;
 
 public class TestArrays {
 
     public static void main(String[] args) {
+
+        double[] mass = new double[3];
+        double[] mass2 = {4.4, 43,5};
+
+        System.out.println("выводим второе число из массива = "+ mass2[1]);
 
         int[] index = new int[4];
         index[0] = 1;

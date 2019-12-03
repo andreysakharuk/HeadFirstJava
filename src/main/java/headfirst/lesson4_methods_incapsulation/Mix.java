@@ -1,11 +1,11 @@
-package headfirst.lesson4;
+package headfirst.lesson4_methods_incapsulation;
 
 /**
  * Created by Andrei_Sakharuk on 8/14/2018.
  */
 public class Mix {
 
-    int counter = 0;
+    private int counter = 0;
 
     public static void main(String[] args) {
         int count = 0;
@@ -21,7 +21,7 @@ public class Mix {
         System.out.println(count + " " + m4a[1].counter);
     }
 
-    public int maybeNew(int index) {
+    private int maybeNew(int index) {
         if (index < 5)
         {
             Mix m4 = new Mix();

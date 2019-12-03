@@ -5,5 +5,4 @@ package headfirst.lesson9;
  */
 public class Bear {
 
-    Honey hunny;
 }
